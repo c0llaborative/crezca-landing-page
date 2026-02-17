@@ -22,10 +22,10 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
-              Características
+              Caracteristicas
             </a>
             <a href="#how-it-works" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
-              Cómo Funciona
+              Como Funciona
             </a>
             <a href="#faq" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
               Preguntas
@@ -33,15 +33,12 @@ export default function Header() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center">
             <Button
-              variant="outline"
-              className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 bg-transparent"
+              asChild
+              className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:from-emerald-600 hover:to-cyan-600"
             >
-              Iniciar Sesión
-            </Button>
-            <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:from-emerald-600 hover:to-cyan-600">
-              Comenzar Gratis
+              <a href="#hero">Comenzar Gratis</a>
             </Button>
           </div>
 
@@ -56,25 +53,20 @@ export default function Header() {
           <div className="md:hidden pb-4 border-t border-emerald-500/20">
             <nav className="flex flex-col gap-4 pt-4">
               <a href="#features" className="text-slate-300 hover:text-emerald-400 transition-colors">
-                Características
+                Caracteristicas
               </a>
               <a href="#how-it-works" className="text-slate-300 hover:text-emerald-400 transition-colors">
-                Cómo Funciona
+                Como Funciona
               </a>
               <a href="#faq" className="text-slate-300 hover:text-emerald-400 transition-colors">
                 Preguntas
               </a>
-              <div className="flex flex-col gap-2 pt-2">
-                <Button
-                  variant="outline"
-                  className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 w-full bg-transparent"
-                >
-                  Iniciar Sesión
-                </Button>
-                <Button className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:from-emerald-600 hover:to-cyan-600 w-full">
-                  Comenzar Gratis
-                </Button>
-              </div>
+              <Button
+                asChild
+                className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:from-emerald-600 hover:to-cyan-600 w-full"
+              >
+                <a href="#hero">Comenzar Gratis</a>
+              </Button>
             </nav>
           </div>
         )}

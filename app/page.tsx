@@ -6,6 +6,7 @@ import HowItWorks from "@/components/how-it-works"
 import FAQ from "@/components/faq"
 import FinalCTA from "@/components/final-cta"
 import Footer from "@/components/footer"
+import ExitIntent from "@/components/exit-intent"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FAQ />
       <FinalCTA />
       <Footer />
+      <ExitIntent />
     </main>
   )
 }
