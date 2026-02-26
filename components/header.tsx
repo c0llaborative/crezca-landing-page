@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
@@ -13,8 +13,8 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center">
-              <span className="text-slate-950 font-bold text-sm">C</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+              <TrendingUp className="h-5 w-5 text-white" />
             </div>
             <span className="text-xl font-bold text-white">Crezca</span>
           </div>

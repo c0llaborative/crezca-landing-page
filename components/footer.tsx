@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, Linkedin, Twitter, AlertCircle } from "lucide-react"
+import { Mail, Linkedin, Twitter, AlertCircle, TrendingUp } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -10,8 +10,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center">
-                <span className="text-slate-950 font-bold text-sm">C</span>
+              <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                <TrendingUp className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold text-white">Crezca</span>
             </div>
