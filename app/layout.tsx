@@ -8,28 +8,31 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Crezca - Analiza la Bolsa Colombiana con IA",
+  title: "Crezca - Invierte inteligente en la bolsa colombiana",
   description:
     "Analiza empresas de la Bolsa de Valores de Colombia con inteligencia artificial. Metricas financieras explicadas en terminos simples para inversionistas retail.",
-  metadataBase: new URL("https://crezca.ai"),
+  metadataBase: new URL("https://crezca.co"),
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
-    title: "Crezca - Inversiones Inteligentes en la Bolsa Colombiana",
+    title: "Crezca - Invierte inteligente en la bolsa colombiana",
     description:
       "Analiza 40+ empresas colombianas con IA. Metricas financieras explicadas de forma simple.",
-    url: "https://crezca.ai",
+    url: "https://crezca.co",
     siteName: "Crezca",
     locale: "es_CO",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Crezca - Analisis financiero con IA" }],
+    images: [{ url: "/og-image.JPG", width: 1200, height: 630, alt: "Crezca - Analisis financiero con IA" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crezca - Inversiones Inteligentes",
+    title: "Crezca - Invierte inteligente en la bolsa colombiana",
     description: "Analiza empresas de la bolsa colombiana con IA",
-    images: ["/og-image.png"],
+    images: ["/og-image.JPG"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://crezca.ai" },
+  alternates: { canonical: "https://crezca.co" },
   keywords: [
     "analisis acciones Colombia",
     "ratios financieros empresas colombianas",
@@ -56,7 +59,7 @@ export default function RootLayout({
               name: "Crezca",
               description:
                 "Plataforma de analisis financiero para la bolsa colombiana con inteligencia artificial",
-              url: "https://crezca.ai",
+              url: "https://crezca.co",
               applicationCategory: "FinanceApplication",
               operatingSystem: "Web",
               inLanguage: "es",
