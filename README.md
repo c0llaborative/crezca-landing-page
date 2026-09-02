@@ -1,30 +1,35 @@
-# Crezca landing page
+# crezca-landing-page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Marketing site and waitlist for Crezca, a financial analysis product for the
+Colombian stock market. Next.js, TypeScript and Tailwind, deployed on Vercel.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/usefultool70-1405s-projects/v0-crezca-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/cV6HNgpLux4)
+Status: live. Source published so it can be read.
 
-## Overview
+## What is here
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+The page layout was scaffolded with v0 and then rebuilt around a waitlist that
+had to actually work. What followed the scaffold is the part worth reading:
 
-## Deployment
+- `app/api/waitlist/route.ts` validates the signup, writes it to Supabase with
+  the service role key held server-side, and sends a welcome message through
+  Resend. The email is best-effort: a Resend failure does not lose the signup.
+- `components/exit-intent.tsx` arms itself after a delay, fires when the
+  pointer leaves the top of the viewport, and records the fact in
+  `sessionStorage` so a visitor sees it once rather than on every scroll back.
+- `app/layout.tsx` sets Open Graph metadata and per-route icons, with Vercel
+  Analytics and Speed Insights wired in.
+- `app/sitemap.ts` and `app/robots.ts` are Next.js metadata routes rather than
+  static files in `public/`.
 
-Your project is live at:
+## Running it
 
-**[https://vercel.com/usefultool70-1405s-projects/v0-crezca-landing-page](https://vercel.com/usefultool70-1405s-projects/v0-crezca-landing-page)**
+```bash
+pnpm install
+cp .env.example .env.local   # Supabase URL, service role key, Resend API key
+pnpm dev
+```
 
-## Build your app
+## Licence
 
-Continue building your app on:
-
-**[https://v0.app/chat/cV6HNgpLux4](https://v0.app/chat/cV6HNgpLux4)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+None. The code is published so it can be read. Crezca brand assets, copy and
+imagery are not licensed for reuse.
